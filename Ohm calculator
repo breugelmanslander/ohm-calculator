@@ -1,0 +1,94 @@
+num1 = 45
+num1_eenheid ='O' 
+num2= 6
+num2_eenheid = 'O'
+eind_eenheid = 'r'
+
+  
+
+if num1_eenheid == 'T':
+  out1 = num1 * 1000000000000
+elif num1_eenheid == 'G':
+  out1 = num1 * 1000000000
+elif num1_eenheid == 'M':
+  out1 = num1 * 1000000
+elif num1_eenheid == 'K':
+  out1 = num1 * 1000
+elif num1_eenheid == 'h':
+  out1 = num1 * 100
+elif num1_eenheid == 'da':
+  out1 = num1 * 10
+elif num1_eenheid == 'O':
+  out1 = num1 * 1
+elif num1_eenheid == 'd':
+  out1 = num1 / 10
+elif num1_eenheid == 'c':
+  out1 = num1 / 100
+elif num1_eenheid == 'm':
+  out1 = num1 / 1000
+elif num1_eenheid == 'H':
+  out1 = num1 / 1000000
+elif num1_eenheid == 'n':
+  out1 = num1 / 1000000000
+elif num1_eenheid == 'p':
+  out1 = num1 / 1000000000000
+  
+
+
+
+
+
+
+if num2_eenheid == 'T':
+  out2 = num2 * 1000000000000
+elif num2_eenheid == 'G':
+  out2 = num2 * 1000000000
+elif num2_eenheid == 'M':
+  out2 = num2 * 1000000
+elif num2_eenheid == 'K':
+  out2 = num2 * 1000
+elif num2_eenheid == 'h':
+  out2 = num2 * 100
+elif num2_eenheid == 'da':
+  out2 = num2 * 10
+elif num2_eenheid == 'O':
+  out2 = num2 * 1
+elif num2_eenheid == 'd':
+  out2 = num2 / 10
+elif num2_eenheid == 'c':
+  out2 = num2 / 100
+elif num2_eenheid == 'm':
+  out2 = num2 / 1000
+elif num2_eenheid == 'H':
+  out2 = num2 / 1000000
+elif num2_eenheid == 'n':
+  out2 = num2 / 1000000000
+elif num2_eenheid == 'p':
+  out2 = num2 / 1000000000000
+  
+output1 = "{:.100f}".format(out1)
+output2 = "{:.100f}".format(out2)
+  
+  
+  
+if eind_eenheid == 'u':
+  out = out1 * out2
+elif eind_eenheid == 'i':
+  out = out1 / out2
+else:
+  out = out1 / out2
+ 
+
+
+
+
+
+if eind_eenheid == 'u':
+  eenheid = "volt"
+elif eind_eenheid == 'i':
+  eenheid = "ampere"
+else:
+  eenheid = "ohm"
+
+
+print(f"{out} {eenheid}")
